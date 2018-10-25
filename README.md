@@ -1,9 +1,23 @@
 # Danger in Rust
 
-WIP
+This is the minimal version of running Danger in Rust. It is a cargo module which expects the [JSON DSL from
+Danger JS](https://danger.systems/js/usage/danger-process.html) and provides a type-safe way to interact with it 
+from inside the app.
 
-### Build Danger
+![screenshots/wip1.png](screenshots/wip1.png)
 
+## Next Steps
+
+- Figure out how this would get on a CI
+- Compiling a Rust dangerfile `danger.rs` and injecting that with the additional runtime work (passing data in/out)
+- Creating commands for `ci`, `pr`, `local`
+- Error handling
+
+I'm learning everything from scratch, so, some of these may take quite a while.
+
+# Contributing
+
+### Building Danger
 
 ```sh
 cargo run --bin danger-rust
@@ -11,7 +25,7 @@ cargo run --bin danger-rust
 
 ### Running Danger in Dev
 
-This is how you can test out how things work
+This is how you can test out how things work:
 
 ```sh
 # Pipe the JSON in and potentially compile + exec
