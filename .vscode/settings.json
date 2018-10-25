@@ -1,0 +1,8 @@
+{
+  "cSpell.words": [
+    "reqwest",
+    "schemafy",
+    "serde"
+  ],
+  "editor.formatOnSave": true
+}

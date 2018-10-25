@@ -1,0 +1,19 @@
+[package]
+name = "danger-rust"
+version = "0.1.0"
+authors = ["Orta Therox <orta.therox@gmail.com>"]
+
+
+[dependencies]
+
+serde = "^1.0"
+serde_json = "^1.0"
+serde_derive = "^1.0"
+
+# These two are bugs, I need them for update_types.rs but don't
+# know how to not make it a core dep :-/
+schemafy = "0.4.3" 
+reqwest = "^0"
+
+[dev-dependencies]
+
