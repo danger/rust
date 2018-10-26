@@ -1,5 +1,7 @@
 # Danger in Rust
 
+[![Build Status](https://travis-ci.org/danger/rust/rust.svg?branch=master)](https://travis-ci.org/danger/rust)
+
 This is the minimal version of running Danger in Rust. It is a cargo module which expects the [JSON DSL from
 Danger JS](https://danger.systems/js/usage/danger-process.html) and provides a type-safe way to interact with it 
 from inside the app.
