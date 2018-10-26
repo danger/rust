@@ -8,7 +8,6 @@ from inside the app.
 
 ## Next Steps
 
-- Figure out how this would get on a CI
 - Compiling a Rust dangerfile `danger.rs` and injecting that with the additional runtime work (passing data in/out)
 - Creating commands for `ci`, `pr`, `local`
 - Error handling
