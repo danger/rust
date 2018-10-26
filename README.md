@@ -10,6 +10,7 @@ from inside the app.
 
 ## Next Steps
 
+- Figure out the distribution method to get it running on other people's CI
 - Compiling a Rust dangerfile `danger.rs` and injecting that with the additional runtime work (passing data in/out)
 - Creating commands for `ci`, `pr`, `local`
 - Error handling
