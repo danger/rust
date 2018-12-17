@@ -3,6 +3,17 @@ name = "danger"
 version = "0.1.0"
 authors = ["Orta Therox <orta.therox@gmail.com>"]
 
+description = "Create Danger rules in Rust"
+homepage = "https://github.com/danger/rust"
+repository = "https://github.com/danger/rust"
+license-file = "LICENSE"
+
+exclude = [
+    "fixtures/*",
+    "screenshots/*",
+    ".vscode/*",
+]
+
 [dependencies]
 
 serde = "^1.0"
