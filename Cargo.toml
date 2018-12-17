@@ -1,8 +1,7 @@
 [package]
-name = "danger-rust"
+name = "danger"
 version = "0.1.0"
 authors = ["Orta Therox <orta.therox@gmail.com>"]
-
 
 [dependencies]
 
