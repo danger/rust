@@ -1,8 +1,9 @@
 #[macro_use]
+extern crate serde_derive;
 
 // The JSON Schema -> Types uses serde, to use the macros that this generates
 // we have to declare that this entire bin will use macros
-extern crate serde_derive;
+
 extern crate serde;
 extern crate serde_json;
 

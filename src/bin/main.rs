@@ -1,9 +1,9 @@
 // Contains the incoming JSON schema -> Types mapping
-mod lib;
+extern crate danger;
 
 fn main() {
-    let danger_dsl: get_danger()()
-    let created = danger_dsl.danger.danger.git.created_files;
+    let danger_dsl = danger::get_danger();
+    let created = danger_dsl.git.created_files;
 
     println!("New Files! {:#?}", created);
 }
