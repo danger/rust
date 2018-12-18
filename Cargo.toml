@@ -12,6 +12,7 @@ exclude = [
     "fixtures/*",
     "screenshots/*",
     ".vscode/*",
+    "example/*",
 ]
 
 [dependencies]

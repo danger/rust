@@ -1,3 +1,11 @@
+#[macro_use]
+
+// The JSON Schema -> Types uses serde, to use the macros that this generates
+// we have to declare that this entire bin will use macros
+extern crate serde_derive;
+extern crate serde;
+extern crate serde_json;
+
 #[derive(Clone, PartialEq, Debug, Default, Deserialize, Serialize)]
 pub struct BitBucketServerCommitAuthor {
   /// The display name of the commit author
@@ -520,4 +528,20 @@ pub struct Schema {
 #[derive(Clone, PartialEq, Debug, Default, Deserialize, Serialize)]
 pub struct FauxSchema {
   pub danger: DangerDSLJSONType,
+}
+
+use std::io::{self, Read};
+
+/// A function to grab the Danger DSL from the
+/// DSL input
+pub fn get_danger() -> DangerDSLJSONType {
+  // Grab the incoming JSON
+  let mut buffer = String::new();
+  let stdin = io::stdin();
+  let mut handle = stdin.lock();
+
+  handle.read_to_string(&mut buffer).unwrap();
+
+  let danger_dsl: Schema = serde_json::from_str(&buffer).unwrap();
+  return danger_dsl.danger.danger;
 }
